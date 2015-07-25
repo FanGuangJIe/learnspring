@@ -1,0 +1,56 @@
+
+1.download mygit from http://msysgit.github.io/
+2.config your git
+	$ git config --global user.name "jie"
+	$ git config --global user.email "fanguangjie1989@163.com"
+
+--create a new repository for you project
+	$ mkdir workspace
+	$ cd workspace
+	$ pwd	
+	$ git init	--这个目录变成Git可以管理的仓库
+	$ ls
+	$ ls -a
+--add and commit a new file to your new repository	
+	$ cd workspace		
+	$ git add readme.txt	--把文件添加到仓库
+	$ git commit -m "add a readme.txt" --添加备注
+--check the status of your files in the workspace   
+	$ git status
+--have a look at the changes happendded to your file
+	$ git diff readme.txt
+--check commit log
+	$ git log
+	$ git log --pretty=oneline
+--back to the old version 
+	#git reset --hard commit_id
+	#HEAD the current version
+	$ git reset --hard HEAD^
+--have a look at the comand log 
+	$ git reflog
+	
+
+$ cd workspace
+
+
+$ ls
+readme.txt
+
+$ rm readme.txt
+
+
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    readme.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+$
+	
+	
+	
+	

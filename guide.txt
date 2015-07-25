@@ -49,8 +49,30 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 
-$
+
+
+--´´½¨SSH Key£º
+$ ssh-keygen -t rsa -C "youremail@example.com"
+--example:
+$ ssh-keygen -t rsa -C "1370635148@qq.com"
+--if everything is done then you can find two files witch one  named is_rsa and the other one called id_rsa.pub
+--id_rsa is the private key;id_rsa.pub is the public key
+
+--then login gitbub 
+--account setttings>ssh keys >add sshkey 
+--copy the content of the file which named idrsa.pub 
+--add ssh keys
+
+
+--then add a new reprosi
+
+--push an existing repository from the command line
+
+$git remote add origin https://github.com/FanGuangJIe/learnspring.git
+$git push -u origin master
+
+
+
 	
 	
-	
-	
+
